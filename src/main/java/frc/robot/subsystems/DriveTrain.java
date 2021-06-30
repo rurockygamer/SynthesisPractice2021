@@ -46,7 +46,7 @@ public class DriveTrain extends SubsystemBase {
     primaryLeftDrive.setNeutralMode(NeutralMode.Brake);
     secondaryLeftDrive.setNeutralMode(NeutralMode.Brake);
     primaryRightDrive.setNeutralMode(NeutralMode.Brake);
-    primaryLeftDrive.setNeutralMode(NeutralMode.Brake);
+    secondaryLeftDrive.setNeutralMode(NeutralMode.Brake);
 
     //Set one side inverted
     leftDrive.setInverted(true);

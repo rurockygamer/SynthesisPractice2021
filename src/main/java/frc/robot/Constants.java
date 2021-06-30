@@ -18,4 +18,8 @@ public final class Constants {
     public static int rightDrivePrimary = 2;
     public static int rightDriveSecondary = 3;
 
+    public static int xBoxPort = 0;
+        
+    public static int rJoystickXAxis = null; //needs to be set up
+    public static int lJoystickYAxis = null; //needs to be set up
 }

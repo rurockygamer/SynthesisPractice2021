@@ -3,7 +3,6 @@
 // the WPILib BSD license file in the root directory of this project.
 
 package frc.robot;
-
 import edu.wpi.first.wpilibj.GenericHID;
 import edu.wpi.first.wpilibj.XboxController;
 import frc.robot.commands.AutoDrive;
@@ -22,10 +21,12 @@ public class RobotContainer {
 
   private final AutoDrive m_autoCommand = new AutoDrive(m_DriveTrain);
 
+  private final XboxController xBoxController = new XboxController(Constants.xBoxPort);
   /** The container for the robot. Contains subsystems, OI devices, and commands. */
   public RobotContainer() {
     // Configure the button bindings
     configureButtonBindings();
+    m_DriveTrain.setDefaultCommand(new ArcadeDrive(m_DriveTrain, xBoxController));
   }
 
   /**
@@ -34,7 +35,10 @@ public class RobotContainer {
    * edu.wpi.first.wpilibj.Joystick} or {@link XboxController}), and then passing it to a {@link
    * edu.wpi.first.wpilibj2.command.button.JoystickButton}.
    */
-  private void configureButtonBindings() {}
+  private void configureButtonBindings() {
+    
+
+  }
 
   /**
    * Use this to pass the autonomous command to the main {@link Robot} class.
