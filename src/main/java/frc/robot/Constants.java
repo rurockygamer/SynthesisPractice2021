@@ -20,6 +20,6 @@ public final class Constants {
 
     public static int xBoxPort = 0;
         
-    public static int rJoystickXAxis = null; //needs to be set up
-    public static int lJoystickYAxis = null; //needs to be set up
+    public static int rJoystickXAxis = 0; //needs to be set up
+    public static int lJoystickYAxis = 3; //needs to be set up
 }
